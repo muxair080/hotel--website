@@ -1,0 +1,100 @@
+
+#navbar{
+    display: block; 
+    justify-content: center;
+   
+}
+#navbar #logo h1{
+    text-align: center;
+    margin-bottom: -30px;
+    }
+.Home{
+    height: 300px;  
+}
+
+.Home h1{
+    margin-top:150px;
+    /* font-size: 1.5rem; */
+}
+/* About Section */
+#About{
+    display: block;
+    margin-bottom: 0px;
+}
+
+#readmore #primary-head{
+    margin-top: 0px;
+    padding: 10px;
+   
+ }
+ #readmore p{
+    width: 330px;
+    padding: 0px;
+    margin: 30px 5px;
+    font-size: 1rem;
+
+ }
+ #readmore #btnreadmore {
+    margin: 0px 0px 30px 30px;
+}
+
+/* Meal  */
+
+#Meal{
+    display: block;
+}
+
+/* About page.html */
+#Aboutpage{
+    display: block;
+    padding: 20px 0px 20px 0px;
+}
+#Aboutpage::before{
+    margin-top: -200px;
+    height: 100vh;
+
+}
+#Aboutpage #content{
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 20px;
+}
+#image img{
+   display: none;
+}
+
+#Aboutpage h1 , p{
+   width: 100%;
+}
+
+
+.OurGeust{
+    height: 130vh;
+    padding: 40px 0px;
+    margin-top: 100px;
+}
+.OurGeust h1{
+    font-size: 1.5rem;
+}
+.Geust{
+    display: block;
+    margin: 10px;    
+    height: 300px;
+    padding: 0px;
+}
+.Geust img{
+    margin: 10px;
+}
+
+/* .footer1{
+    display: block;
+    text-align: center;
+    background-color: rgb(49, 47, 47);
+    text-align: center;
+    height: 50px;
+} */
+.footer1 footer a{
+    text-decoration: none;
+     color: white;
+     font-size: 1.5rem;
+ }

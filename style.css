@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ #navbar{
+     display: flex; 
+     justify-content: space-between; 
+     position: relative;
+ }
+#navbar #logo{
+    margin: 10px;
+    padding: 20px;
+}
+ #navbar #logo h1{
+    font-family: 'Original Surfer', cursive;
+    font-size:20px;
+    color: tomato;
+    cursor: pointer;
+    }
+ 
+ 
+ #navbar::before {
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+ #navbar ul{
+     display: flex;
+ }
+ 
+ #navbar ul li{
+     margin: 20px;
+     padding: 0px;
+    list-style: none;
+ }
+ #navbar ul li a{
+     display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-style:italic;
+}
+ #navbar ul li a:hover{
+     background-color: rgb(66, 65, 65);
+    color:gold;
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 480px;  
+}
+
+.Home::before{
+   content: "";
+   background: url('/showcase.png') no-repeat center center/cover;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.89;
+}
+.Home h1{
+    font-size: 80px;
+    font-family: 'Original Surfer', cursive;
+    color: white;
+}
+.Home h1 span{
+    color:goldenrod;
+}
+
+.Home p{
+    font-size: 30px;
+    width: 900px;
+    color:white;
+}
+
+
+
+/* About Section */
+
+#About{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* margin: 10px; */
+    margin-top: 80px;
+    position: relative;
+  
+}
+ #About #image{
+     width: 100%;
+     height: 400px;
+    background: url('/images.jfif') no-repeat center center/cover;
+ }
+ #About #readmore{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    /* backdrop-filter: blur(10px); */
+    opacity: 1;
+ }
+ #readmore #primary-head{
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center; 
+ }
+ #readmore p{
+    color: white;
+    font-size: 20px;
+    width: 600px;
+    /* text-align: center; */
+    margin: 30px 50px;
+ }
+.btn{
+     width: 150px;
+     height: 50px;
+     margin-left: 40%;
+     cursor: pointer;
+     border: 1px solid black;
+     /* border-radius: 50px; */
+ }
+ .btn:hover{
+     color: white;
+     background-color:chocolate;
+     border-bottom: 5px solid black;
+ }
+ 
+ /* showcase screen button  */
+#showbtn{
+    width: 100%;
+    margin: 100px;
+} 
+
+ /* Section 3 */
+ #Meal{
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: 33.3% 33.3% 33.3% ;
+     position: relative;
+ }
+ #Meal .Section3{
+     border: none;
+     text-align: center;
+     justify-content: center;
+     /* margin:32px; */
+     padding: 30px 23px;
+    }
+    #Meal #Freemeal{
+        background-color:rgb(243, 175, 92);
+    }
+     .fas{
+        font-size: 50px;
+        margin: 10px;
+    } 
+    .fa{
+        margin: 0px;
+       
+    }
+
+    .footer1{
+        display: block;
+        text-align: center;
+        background-color: rgb(49, 47, 47);
+        text-align: center;
+        height: 50px;
+    }
+    
+    .footer1 footer a{
+       text-decoration: none;
+        color: white;
+        font-size: 2.5rem;
+    }
+   
+      
+    /* About Page Css code  About.html*/
+
+#Aboutpage{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 73vh;
+    padding: 100px 0px 100px 100px;
+    background-color: white;
+}
+#Aboutpage::before{
+    content: "";
+    position:absolute;
+    background: url('showcase.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.89;   
+}
+
+#Aboutpage #content{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+}
+
+#Aboutpage #image{
+    display: block;
+    position:relative;
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    margin-top: 200px;
+}
+#image img{
+    width: 200px;
+    border: none;
+    border-radius: 100%;
+    height: 150px;
+    right: 100px;
+}
+#Aboutpage h1 , p{
+    font-size: 1.5rem;
+    font-family: 'Original Surfer', cursive;
+}
+
+/* Our Guest */
+
+.OurGeust{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    background: url('showcase.png') no-repeat center center/cover;
+    padding-top: 80px;
+}
+.OurGeust h1{
+    color: white;
+    font-family: 'Original Surfer', cursive;
+    font-size: 3.5rem;
+}
+.Geust{
+    display: flex;
+    margin: 100px;
+    /* color: white; */
+    background-color:rgb(212, 166, 79);
+    border-bottom: 3px solid black;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+.Geust img{
+    width: 130px;
+    height: 90px;
+    border: none;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Contact Us page */
+
+ /* media querry */
+ @media ( min-width: 601px) and (max-width : 830px )   {
+    .Home h1{
+        font-size: 1.5rem;
+    }
+    .Home p{
+        font-size: 1rem;
+        width: 600px;
+        margin-top: 50px;
+    }
+    #readmore #primary-head{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 100px;
+       
+     }
+     #readmore p{
+        color: white;
+        font-size: 1rem;
+        width: 400px;
+        padding: 0px 50px;
+        margin: 30px 30px;
+     }
+     .btn{
+        margin-left: 30%;
+    }
+
+    #About{
+        margin-top: 70px;
+    }
+
+    /* About Page*/
+  /* #Aboutpage{
+      padding: 0px 0px 0px 200px;
+  } */
+
+    #Aboutpage h1 {
+        font-size: 1.5rem;
+    }
+    #Aboutpage p{
+        font-size: 1rem;
+        font-family: 'Original Surfer', cursive;
+    }
+    #Aboutpage #content{
+        margin-left: -170px;
+    }
+
+    /* #Aboutpage #image{
+        display: block;
+        position:relative;
+        width: 1000px;
+        height: 100%;
+        text-align: left;
+       
+    } */
+
+    .OurGeust h1{
+        font-size: 1.5rem;
+    }
+    .Geust h1 ,
+    .Geust p{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+
+
+}
+
+@media (min-width:400px ) and (max-width : 600px)  {
+    .Home h1{
+        margin: 0px;
+        font-size: 1.5rem;
+    }
+    .Home p{
+        font-size: 1rem;
+        width: 400px;
+        margin-top: 10px;
+    }
+    #readmore #primary-head{
+        margin-top: 10px;
+     }
+     #readmore p{
+        color: white;
+        font-size: 1rem;
+        width: 200px;
+        padding: 0px 50px 0px 0px;
+        /* margin: 30px 30px; */
+     }
+     .btn{
+        margin-left: 30%;
+        width: 40%;
+        height: 40px;
+    }
+
+    #About{
+        margin-top: 70px;
+    }
+}
+@media (max-width : 400px)  {
+    #navbar{
+        display: block; 
+        justify-content: center;
+       
+    }
+    .Home{
+        height: 300px;  
+    }
+
+    #navbar #logo{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+  
+    .Home h1{
+        margin-top:150px;
+        font-size: 1.5rem;
+    }
+    .Home p{
+        font-size: 1rem;
+        width: 400px;
+        margin-top: 10px;
+    }
+    .Home #showbtn button{
+        margin-left: 27%;
+    }
+    #About{
+        display: block;
+    }
+    #readmore{
+        text-align: center;
+    }
+    #readmore #primary-head{
+        font-size: 1.5rem;
+        margin-top: 0%; 
+        padding-top: 40px;
+    }
+
+    #readmore p{
+        padding: 5px 0px;
+       width: 250px;
+       font-size: 1rem;
+
+       /* text-align: center; */
+    }
+    #readmore #btnreadmore {
+        margin: 0px 0px 20px 0px;
+    }
+
+    #Meal{
+        display: block;
+    }
+  
+}
